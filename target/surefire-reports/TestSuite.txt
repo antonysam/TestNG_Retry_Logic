@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 6, Time elapsed: 80.094 sec <<< FAILURE!
+validate(com.orangeHRM.testcases.orangeHRM_login)  Time elapsed: 0.019 sec  <<< FAILURE!
+java.lang.AssertionError: expected [sam] but found [OrangeHRM]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.orangeHRM.testcases.Golden_template.ValidatePageTitle(Golden_template.java:123)
+	at com.orangeHRM.testcases.orangeHRM_login.validate(orangeHRM_login.java:20)
+
+validatewebelement(com.orangeHRM.testcases.orangeHRM_login)  Time elapsed: 0.044 sec  <<< FAILURE!
+java.lang.AssertionError: expected [sam] but found [LOGIN Panel]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.orangeHRM.testcases.Golden_template.ValidateText(Golden_template.java:130)
+	at com.orangeHRM.testcases.orangeHRM_login.validatewebelement(orangeHRM_login.java:25)
+
